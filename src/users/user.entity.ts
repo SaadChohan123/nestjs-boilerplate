@@ -1,3 +1,4 @@
+import { UserType } from "src/common/enums";
 import { Column, Entity, ObjectIdColumn } from "typeorm";
 
 @Entity()
@@ -10,4 +11,7 @@ export class User{
 
     @Column()
     password:string;
+
+    @Column()
+    userType:UserType;
 }

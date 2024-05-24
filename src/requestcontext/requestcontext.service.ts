@@ -11,7 +11,7 @@ export class RequestcontextService {
 
 
     getUserId(){
-        const userId = this.request["userId"]; 
+        const userId = this.request["user"]["sub"]; 
         return userId;
     }
 }
